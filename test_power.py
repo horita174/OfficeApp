@@ -39,12 +39,6 @@ for slide in prs.slides:
                 for run in paragraph.runs:
                     character_count += len(run.text)
 
-
-# # 文字数をテキストボックスに挿入
-# slide = prs.slides[-1]  # 最後のスライドを取得
-# textbox = slide.shapes.add_textbox(left, top + height, width, height)
-# text_frame = textbox.text_frame
-# text_frame.text = 
 subtitle.text = "文字数: {}".format(character_count)
 
 # 変更内容を保存する
